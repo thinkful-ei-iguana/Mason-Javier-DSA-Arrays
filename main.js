@@ -1,3 +1,6 @@
+const Array = require('./array');
+const Memory = require('./memory');
+
 function main() {
 
   Array.SIZE_RATIO = 3;
