@@ -39,4 +39,24 @@ function mergeArr(arr1, arr2) {
   let result = [...arr1, ...arr2];
   return result.sort((a, b) => a - b);
 }
-console.log(mergeArr([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
+// console.log(mergeArr([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
+
+//9
+
+function character(str, toRemove) {
+  console.log(str);
+
+  let newStr = '';
+
+  for (let i in str) {
+    if (!toRemove.includes(str[i])) {
+      newStr += str[i];
+    }
+  }
+  console.log(newStr);
+  return newStr;
+}
+
+character('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou');
+
+//10
