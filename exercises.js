@@ -16,7 +16,6 @@ Array.prototype.mfilter = function (fun) {
 var returnedArr = [1, 2, 3, 4, 5, 6].mfilter(function (element, index, arr) {
   return element > 5;
 });
-
 // console.log(returnedArr);
 
 //7
@@ -56,7 +55,25 @@ function character(str, toRemove) {
   console.log(newStr);
   return newStr;
 }
-
-character('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou');
+// character('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou');
 
 //10
+function products(arr) {
+
+  let productsArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    let num = 1;
+
+    for (let j = 0; j < arr.length; j++) {
+      if (j !== i) {
+        num *= arr[j];
+
+      }
+    }
+    productsArray.push(num);
+  }
+  return productsArray;
+}
+// console.log(products([1, 3, 9, 4]));
+
+//11
