@@ -1,10 +1,10 @@
-const Memory = require('./Memory');
-
+const Mem = require('./Memory');
+const Memory = new Mem();
 class Array {
   constructor() {
     this.length = 0;
     this._capacity = 0;
-    this.ptr = new Memory.allocate(this.length);
+    this.ptr = Memory.allocate(this.length);
   }
 
   push(value) {
