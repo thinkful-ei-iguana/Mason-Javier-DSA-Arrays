@@ -26,11 +26,11 @@ function main() {
 
 
   // underscorevariablename => _resize used is used as a private function
-//for that class. in this it can only be used by the array class
-// a new address/ptr when an array is allocated. pop does need to re allocate
-// it just frees up that box.
-//app.size ration is 3 so once it exceeds that. lets say to 4. it will triple
-// its size. capacity will then be 12.
+  //for that class. in this it can only be used by the array class
+  // a new address/ptr when an array is allocated. pop does need to re allocate
+  // it just frees up that box.
+  //app.size ration is 3 so once it exceeds that. lets say to 4. it will triple
+  // its size. capacity will then be 12.
 }
+// main();
 
-main();
