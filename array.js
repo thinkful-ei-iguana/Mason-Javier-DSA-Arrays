@@ -4,7 +4,7 @@ class Array {
   constructor() {
     this.length = 0;
     this._capacity = 0;
-    this.ptr = Memory.allocate(this.length);
+    this.ptr = new Memory.allocate(this.length);
   }
 
   push(value) {
@@ -71,3 +71,5 @@ class Array {
 
 }
 Array.size_ratio = 3;
+
+module.exports = Array

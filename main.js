@@ -1,7 +1,7 @@
 const Array = require('./array');
 const Memory = require('./memory');
 
-function main() {
+const main = () => {
 
   Array.SIZE_RATIO = 3;
 
@@ -13,3 +13,6 @@ function main() {
 
   console.log(arr);
 }
+
+
+module.exports = main
