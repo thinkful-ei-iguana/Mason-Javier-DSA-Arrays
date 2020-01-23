@@ -17,4 +17,26 @@ var returnedArr = [1, 2, 3, 4, 5, 6].mfilter(function (element, index, arr) {
   return element > 5;
 });
 
-console.log(returnedArr);
+// console.log(returnedArr);
+
+//7
+function maxSum(arr) {
+  let total = 0;
+  let max = 0;
+  arr.forEach(num => {
+    total += num;
+    console.log(num, total);
+    if (total > max) {
+      max = total;
+    }
+  });
+  return max;
+}
+// console.log(maxSum([4, 6, -3, 5, -2, 1]));
+
+//8
+function mergeArr(arr1, arr2) {
+  let result = [...arr1, ...arr2];
+  return result.sort((a, b) => a - b);
+}
+console.log(mergeArr([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
